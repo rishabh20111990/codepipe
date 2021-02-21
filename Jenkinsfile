@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('docker') {
+      steps {
+        archiveArtifacts '1.13-SNAPSHOT'
+      }
+    }
+
   }
 }
